@@ -22,7 +22,7 @@ You will be dropped into a shell with all DAC permissions (NOT USER ROOT). A new
 
 `./s8_poc -s -r <path>`
 
-Drops into a privileged shell, remounts rootfs as r/w, copies the file over, and executes the file at `<path>` as root, in the kernel SELinux context. Keep in mind, you WILL kernel panic if you try to execute anything out of the `/data/` partitition as root. This part of the "Real Kernel Proctection" component of Samsung Knox. So if the ELF is a reverse shell type thing, and you choose to execute something out of `/data`, bad times will incur. Stick to the privileged shell to execute out of `/data`, or copy what you need over to rootfs. 
+Drops into a privileged shell, remounts rootfs as r/w, copies the file over, and executes the file at `<path>` as root, in the kernel SELinux context. Keep in mind, you WILL kernel panic if you try to execute anything out of the `/data/` partition as root. This part of the "Real Kernel Proctection" component of Samsung Knox. So if the ELF is a reverse shell type thing, and you choose to execute something out of `/data`, bad times will incur. Stick to the privileged shell to execute out of `/data`, or copy what you need over to rootfs. 
 
 `./s8_poc -p <path>`
 
